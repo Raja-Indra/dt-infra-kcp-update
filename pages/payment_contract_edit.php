@@ -216,7 +216,7 @@ include '../nav.php';
                             <div class="col-md-4">
                                 <label for="invoice" class="form-label">Invoice File</label>
                                 <?php if($row['invoice']): ?>
-                                    <span class="current-file-link">Current: <a href="/dt-infra-kcp/uploads/<?= $row['invoice'] ?>" target="_blank">View File</a></span>
+                                    <span class="current-file-link">Current: <a href="/dt-infra-kcp-update/uploads/<?= $row['invoice'] ?>" target="_blank">View File</a></span>
                                 <?php endif; ?>
                                 <div class="input-group input-group-sm">
                                     <input type="file" name="invoice" id="invoice" class="form-control">
@@ -226,7 +226,7 @@ include '../nav.php';
                             <div class="col-md-4">
                                 <label for="tax" class="form-label">Tax File</label>
                                 <?php if($row['tax']): ?>
-                                    <span class="current-file-link">Current: <a href="/dt-infra-kcp/uploads/<?= $row['tax'] ?>" target="_blank">View File</a></span>
+                                    <span class="current-file-link">Current: <a href="/dt-infra-kcp-update/uploads/<?= $row['tax'] ?>" target="_blank">View File</a></span>
                                 <?php endif; ?>
                                 <div class="input-group input-group-sm">
                                     <input type="file" name="tax" id="tax" class="form-control">
@@ -236,7 +236,7 @@ include '../nav.php';
                             <div class="col-md-4">
                                 <label for="bai" class="form-label">BAI File</label>
                                 <?php if($row['bai']): ?>
-                                    <span class="current-file-link">Current: <a href="/dt-infra-kcp/uploads/<?= $row['bai'] ?>" target="_blank">View File</a></span>
+                                    <span class="current-file-link">Current: <a href="/dt-infra-kcp-update/uploads/<?= $row['bai'] ?>" target="_blank">View File</a></span>
                                 <?php endif; ?>
                                 <div class="input-group input-group-sm">
                                     <input type="file" name="bai" id="bai" class="form-control">

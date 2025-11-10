@@ -245,19 +245,19 @@ include '../nav.php';
                             
                             <td class="text-center action-links">
                                 <?php if($r['invoice']): ?>
-                                    <a href="/dt-infra-kcp/uploads/<?= $r['invoice'] ?>" target="_blank">View</a> |
+                                    <a href="/dt-infra-kcp-update/uploads/<?= $r['invoice'] ?>" target="_blank">View</a> |
                                     <a href="?delete_file=invoice&id=<?= $r['id'] ?>&page=<?= $page ?>&search=<?= htmlspecialchars($search) ?>" class="text-danger" onclick="return confirm('Delete invoice file?')">Del</a>
                                 <?php endif; ?>
                             </td>
                             <td class="text-center action-links">
                                 <?php if($r['tax']): ?>
-                                    <a href="/dt-infra-kcp/uploads/<?= $r['tax'] ?>" target="_blank">View</a> |
+                                    <a href="/dt-infra-kcp-update/uploads/<?= $r['tax'] ?>" target="_blank">View</a> |
                                     <a href="?delete_file=tax&id=<?= $r['id'] ?>&page=<?= $page ?>&search=<?= htmlspecialchars($search) ?>" class="text-danger" onclick="return confirm('Delete tax file?')">Del</a>
                                 <?php endif; ?>
                             </td>
                             <td class="text-center action-links">
                                 <?php if($r['bai']): ?>
-                                    <a href="/dt-infra-kcp/uploads/<?= $r['bai'] ?>" target="_blank">View</a> |
+                                    <a href="/dt-infra-kcp-update/uploads/<?= $r['bai'] ?>" target="_blank">View</a> |
                                     <a href="?delete_file=bai&id=<?= $r['id'] ?>&page=<?= $page ?>&search=<?= htmlspecialchars($search) ?>" class="text-danger" onclick="return confirm('Delete BAI file?')">Del</a>
                                 <?php endif; ?>
                             </td>

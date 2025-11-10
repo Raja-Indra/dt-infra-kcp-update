@@ -302,38 +302,38 @@ nav.navbar .submenu a:hover {
 <nav class="navbar">
   <div class="menu-left">
     <span class="greeting">Hello <?= htmlspecialchars($username) ?></span>
-    <div class="menu-item"><a href="/dt-infra-kcp/index.php">DASHBOARD</a></div>
-    <?php if ($akses['daily_job'] === 'Yes'): ?><div class="menu-item"><a href="/dt-infra-kcp/pages/daily_job.php">DAILY JOB</a></div><?php endif; ?>
-    <?php if ($akses['detail_job'] === 'Yes'): ?><div class="menu-item"><a href="/dt-infra-kcp/pages/detail_job.php">DETAIL JOB</a></div><?php endif; ?>
-    <?php if ($akses['departments'] === 'Yes'): ?><div class="menu-item"><a href="/dt-infra-kcp/pages/departments.php">DEPARTMENTS</a></div><?php endif; ?>
-    <?php if ($akses['employee'] === 'Yes'): ?><div class="menu-item"><a href="/dt-infra-kcp/pages/employee.php">EMPLOYEE</a></div><?php endif; ?>
-    <?php if ($akses['user'] === 'Yes'): ?><div class="menu-item"><a href="/dt-infra-kcp/pages/asset_merk_type.php">ASSET MERK</a></div><?php endif; ?>
+    <div class="menu-item"><a href="/dt-infra-kcp-update/index.php">DASHBOARD</a></div>
+    <?php if ($akses['daily_job'] === 'Yes'): ?><div class="menu-item"><a href="/dt-infra-kcp-update/pages/daily_job.php">DAILY JOB</a></div><?php endif; ?>
+    <?php if ($akses['detail_job'] === 'Yes'): ?><div class="menu-item"><a href="/dt-infra-kcp-update/pages/detail_job.php">DETAIL JOB</a></div><?php endif; ?>
+    <?php if ($akses['departments'] === 'Yes'): ?><div class="menu-item"><a href="/dt-infra-kcp-update/pages/departments.php">DEPARTMENTS</a></div><?php endif; ?>
+    <?php if ($akses['employee'] === 'Yes'): ?><div class="menu-item"><a href="/dt-infra-kcp-update/pages/employee.php">EMPLOYEE</a></div><?php endif; ?>
+    <?php if ($akses['user'] === 'Yes'): ?><div class="menu-item"><a href="/dt-infra-kcp-update/pages/asset_merk_type.php">ASSET MERK</a></div><?php endif; ?>
 
     <?php if ($akses['assets'] === 'Yes'): ?>
     <div class="menu-item">
       <a href="#">ASSETS ▾</a>
       <div class="submenu">
-        <a href="/dt-infra-kcp/pages/radio.php">Radio</a>
-        <a href="/dt-infra-kcp/pages/computer.php">Computer</a>
-        <a href="/dt-infra-kcp/pages/network.php">Network</a>
-        <a href="/dt-infra-kcp/pages/attendance.php">Attendance</a>
-        <a href="/dt-infra-kcp/pages/cctv.php">CCTV</a>
-        <a href="/dt-infra-kcp/pages/server.php">Server</a>
-        <a href="/dt-infra-kcp/pages/printer.php">Printer</a>
-        <a href="/dt-infra-kcp/pages/tools.php">Tools</a>
+        <a href="/dt-infra-kcp-update/pages/radio.php">Radio</a>
+        <a href="/dt-infra-kcp-update/pages/computer.php">Computer</a>
+        <a href="/dt-infra-kcp-update/pages/network.php">Network</a>
+        <a href="/dt-infra-kcp-update/pages/attendance.php">Attendance</a>
+        <a href="/dt-infra-kcp-update/pages/cctv.php">CCTV</a>
+        <a href="/dt-infra-kcp-update/pages/server.php">Server</a>
+        <a href="/dt-infra-kcp-update/pages/printer.php">Printer</a>
+        <a href="/dt-infra-kcp-update/pages/tools.php">Tools</a>
       </div>
     </div>
     <?php endif; ?>
 
-    <?php if ($akses['user'] === 'Yes'): ?><div class="menu-item"><a href="/dt-infra-kcp/pages/warehouse.php">WAREHOUSE</a></div><?php endif; ?>
-    <?php if ($akses['user'] === 'Yes'): ?><div class="menu-item"><a href="/dt-infra-kcp/pages/inventory.php">INVENTORY</a></div><?php endif; ?>
+    <?php if ($akses['user'] === 'Yes'): ?><div class="menu-item"><a href="/dt-infra-kcp-update/pages/warehouse.php">WAREHOUSE</a></div><?php endif; ?>
+    <?php if ($akses['user'] === 'Yes'): ?><div class="menu-item"><a href="/dt-infra-kcp-update/pages/inventory.php">INVENTORY</a></div><?php endif; ?>
 
     <?php if ($akses['purchasing'] === 'Yes'): ?>
     <div class="menu-item">
       <a href="#">PURCHASING ▾</a>
       <div class="submenu">
-        <a href="/dt-infra-kcp/pages/material_request.php">Material Request</a>
-        <a href="/dt-infra-kcp/pages/payment_contract.php">Payment Contract</a>
+        <a href="/dt-infra-kcp-update/pages/material_request.php">Material Request</a>
+        <a href="/dt-infra-kcp-update/pages/payment_contract.php">Payment Contract</a>
       </div>
     </div>
     <?php endif; ?>
@@ -342,17 +342,17 @@ nav.navbar .submenu a:hover {
     <div class="menu-item">
       <a href="#">DATA ACCOUNT ▾</a>
       <div class="submenu">
-        <a href="/dt-infra-kcp/pages/email.php">Email</a>
-        <a href="/dt-infra-kcp/pages/hotspot.php">Hotspot</a>
-        <a href="/dt-infra-kcp/pages/ip_address.php">IP Address</a>
+        <a href="/dt-infra-kcp-update/pages/email.php">Email</a>
+        <a href="/dt-infra-kcp-update/pages/hotspot.php">Hotspot</a>
+        <a href="/dt-infra-kcp-update/pages/ip_address.php">IP Address</a>
       </div>
     </div>
     <?php endif; ?>
 
-    <?php if ($akses['user'] === 'Yes'): ?><div class="menu-item"><a href="/dt-infra-kcp/pages/user.php">USER</a></div><?php endif; ?>
+    <?php if ($akses['user'] === 'Yes'): ?><div class="menu-item"><a href="/dt-infra-kcp-update/pages/user.php">USER</a></div><?php endif; ?>
   </div>
   <div class="logout">
-      <a href="/dt-infra-kcp/logout.php" onclick="return confirm('Apakah Anda yakin ingin logout?')">LOGOUT</a>
+      <a href="/dt-infra-kcp-update/logout.php" onclick="return confirm('Apakah Anda yakin ingin logout?')">LOGOUT</a>
   </div>
 </nav>
 <div class="footer">
